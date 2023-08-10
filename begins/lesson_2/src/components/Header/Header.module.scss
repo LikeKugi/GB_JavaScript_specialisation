@@ -1,0 +1,18 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: teal;
+  color: white;
+  padding: 15px 40px;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    * {
+      text-decoration: none;
+    }
+  }
+}
