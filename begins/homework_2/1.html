@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Task 1 | Homework 2</title>
+    <link rel="stylesheet"
+          href="style.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="1.html"
+                                   class="nav__link">1 Task</a></li>
+          <li class="nav__item"><a href="2.html"
+                                   class="nav__link">2 Task</a></li>
+          <li class="nav__item"><a href="3.html"
+                                   class="nav__link">3 Task</a></li>
+          <li class="nav__item"><a href="4.html"
+                                   class="nav__link">4 Task</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="container">
+        <h1 class="title">Task 1</h1>
+        <p class="description">Создать переменные positive и negative, в которые пользователь вводит с
+          клавиатуры значения. Нужно попросить пользователя ввести положительное число в
+          переменную positive и отрицательное в переменную negative.
+          Перед тем, как положить значения в данные переменные необходимо их превратить
+          в числа.
+          После ввода значений, необходимо вывести "Все значения верные.", если
+          пользователь действительно ввел корректные значения, которые мы просили его
+          ввести.
+          Если же пользователь где-то ввел неверное значение, то необходимо вывести
+          в консоль "Одно или более значений некорректно.".</p>
+        <form class="form">
+          <div class="field"><label for="first">Positive: </label><input type="number"
+                                                                         name="first"
+                                                                         id="first"></div>
+          <div class="field"><label for="second">Negative: </label><input type="number"
+                                                                          name="second"
+                                                                          id="second"></div>
+          <button type="submit">Submit</button>
+        </form>
+        <p class="result">Result: <span id="result"></span></p></div>
+    </main>
+    <script src="1.js"></script>
+  </body>
+</html>

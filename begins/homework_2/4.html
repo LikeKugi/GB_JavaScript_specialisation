@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Task 4 | Homework 2</title>
+    <link rel="stylesheet"
+          href="style.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="1.html"
+                                   class="nav__link">1 Task</a></li>
+          <li class="nav__item"><a href="2.html"
+                                   class="nav__link">2 Task</a></li>
+          <li class="nav__item"><a href="3.html"
+                                   class="nav__link">3 Task</a></li>
+          <li class="nav__item"><a href="4.html"
+                                   class="nav__link">4 Task</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="container">
+        <h1 class="title">Task 4</h1>
+        <p class="description">Необязательное задание.
+          Если вам показалось домашнее задание простым, выполняем данный пункт.
+          <br>
+          Необходимо от пользователя получить целое число.
+          Необходимо вывести разряды числа, а именно: количество сотен, десятков и единиц.
+          <br>
+          Пример:
+          Пользователь ввел число 163. Программа должна вывести:
+          "В числе 163 количество сотен: 1, десятков: 6, единиц: 3"
+          <br>
+          Пример 2:
+          Пользователь ввел число 74. Программа должна вывести:
+          "В числе 74 количество сотен: 0, десятков: 7, единиц: 4"
+          <br>
+          Пример 3:
+          Пользователь ввел число 9537. Программа должна вывести:
+          "В числе 9537 количество сотен: 5, десятков: 3, единиц: 7"
+          <br>
+          Уточнение: Пользователь всегда вводит корректное положительное целое число.
+          Подсказка: Возможно, вам понадобится округление чисел и оператор %.</p>
+        <form class="form">
+          <div class="field"><label for="num">number: </label><input type="number"
+                                                                     name="num"
+                                                                     id="num"></div>
+          <button type="submit">Submit</button>
+        </form>
+        <p class="result">Result: <span id="result"></span></p></div>
+    </main>
+    <script src="4.js"></script>
+  </body>
+</html>
