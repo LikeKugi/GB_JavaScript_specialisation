@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"/>
+    <title>Homework</title>
+    <script src="1.js"
+            defer></script>
+    <script src="2.js"
+            defer></script>
+    <script src="3.js"
+            defer></script>
+    <script src="4.js"
+            defer></script>
+  </head>
+  <body>
+    <header class="header">Homework 3</header>
+
+    <fieldset id="task1">
+      <legend>Создайте функцию которая принимает число, возводит переданное число в куб и
+        возвращает полученное значение.
+      </legend>
+      <label for="first">Number: </label>
+      <input type="number"
+             name="first"
+             id="first">
+      <button type="button" id="calcFirst">Submit</button>
+      <p>Result: <span id="resultFirst"></span></p>
+    </fieldset>
+
+    <fieldset id="task2">
+      <legend>Необходимо попросить пользователя ввести число.</legend>
+      <p>Если пользователь ввел отличное от числа значение, необходимо вывести в консоль
+        строку: "Значение задано неверно", иначе необходимо будет вызвать функцию
+        (нужно будет ее создать), которая будет принимать введенное пользователем
+        число. Функция должна вычесть из переданного ей числа 13% и вывести в консоль
+        сообщение "Размер заработной платы за вычетом налогов равен N."</p>
+      <label for="second">Salary: </label>
+      <input type="text"
+             name="second"
+             id="second">
+      <button type="button" id="calcSecond">Submit</button>
+      <p>Result: <span id="resultSecond"></span></p>
+    </fieldset>
+
+    <fieldset id="task3">
+      <legend>Функция должна определить максимальное, среди переданных ей значение</legend>
+      <label for="third1">1 Number: </label>
+      <input type="number"
+             name="third1"
+             id="third1">
+      <label for="third2">2 Number: </label>
+      <input type="number"
+             name="third2"
+             id="third2">
+      <label for="third3">3 Number: </label>
+      <input type="number"
+             name="third3"
+             id="third3">
+      <button type="button" id="calcThird">Submit</button>
+      <p>Result: <span id="resultThird"></span></p>
+    </fieldset>
+
+    <fieldset id="task4">
+      <legend>Необходимо реализовать четыре функции, каждая функция должна принимать по два
+        числа и выполнять одну из операций</legend>
+      <label for="fourth1">1 Number: </label>
+      <input type="number"
+             name="fourth1"
+             id="fourth1">
+      <label for="fourth2">2 Number: </label>
+      <input type="number"
+             name="fourth2"
+             id="fourth2">
+
+      <button type="button" id="sumFourth">+</button>
+      <button type="button" id="difFourth">-</button>
+      <button type="button" id="mulFourth">*</button>
+      <button type="button" id="divFourth">/</button>
+      <p>Result: <span id="resultFourth"></span></p>
+    </fieldset>
+  </body>
+</html>
