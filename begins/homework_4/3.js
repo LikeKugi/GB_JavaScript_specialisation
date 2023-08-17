@@ -15,13 +15,13 @@
 */
 
 const randint = (min = 0, max = 10) => (Math.floor(Math.random() * (max - min) + min));
-const arr = [...Array(5)].map(() => randint());
+const t3arr = [...Array(5)].map(() => randint());
 
-console.log("Сгенерировать массив, содержащий 5 цифр в диапазоне [0, 9]: ", arr);
-console.log("Сумму элементов массива: ", arr.reduce((a, x) => a + x, 0));
-console.log("Минимальное значение в массиве: ", Math.min(...arr));
+console.log("Сгенерировать массив, содержащий 5 цифр в диапазоне [0, 9]: ", t3arr);
+console.log("Сумму элементов массива: ", t3arr.reduce((a, x) => a + x, 0));
+console.log("Минимальное значение в массиве: ", Math.min(...t3arr));
 
-const arr3 = arr.map((x, idx) => x === 3 ? idx : null).filter((x) => Number.isFinite(x));
+const t3arr2 = t3arr.map((x, idx) => x === 3 ? idx : null).filter((x) => Number.isFinite(x));
 
-console.log("Новый массив, содержащий индексы сгенерированного выше массива, в которых значение равно 3: ", arr3);
+console.log("Новый массив, содержащий индексы сгенерированного выше массива, в которых значение равно 3: ", t3arr2);
 
