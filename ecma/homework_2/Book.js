@@ -14,8 +14,8 @@ class Book {
   }
 }
 
-const janeAir = new Book("Jane Air", "Charlotte Brontë", 500);
+const janeEyre = new Book("Jane Eyre", "Charlotte Brontë", 500);
 const goldfinch = new Book("The Goldfinch", "Donna Louise Tartt", 320);
 
-janeAir.displayInfo();
+janeEyre.displayInfo();
 goldfinch.displayInfo();
