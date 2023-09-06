@@ -1,0 +1,68 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 15px 0;
+  border-bottom: 2px solid teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__nav {
+  display: block;
+  padding: 5px 15px;
+  background-color: ghostwhite;
+  color: teal;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.header__nav:hover {
+  filter: drop-shadow(0 0 3px teal);
+}
+.header__nav:active {
+  color: ghostwhite;
+  background-color: teal;
+}
+.header__nav:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+#root {
+  max-width: 1050px;
+  padding: 40px 25px 0;
+  margin: 0 auto;
+}
+
+.user {
+  max-width: 600px;
+  width: 100%;
+  padding: 10px 15px;
+  margin: 15px auto;
+  border: 1px solid teal;
+  border-radius: 20px;
+}
+.user * {
+  margin: 7px;
+}
+.user__title {
+  text-align: center;
+}
+.user__info {
+  font-size: 18px;
+}
+.user__controls {
+  display: flex;
+  justify-content: center;
+}
+.user__btn {
+  display: block;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */
