@@ -30,10 +30,11 @@ class Library {
    */
   constructor(...books) {
     if (this.#checkDuplicates(books)) {
-      throw new Error('Found some duplicates')
+      throw new Error("Found some duplicates");
     }
-    books.forEach(book => this.#books.add(book))
+    books.forEach(book => this.#books.add(book));
   }
+
   get allBooks() {
     return [...this.#books];
   }
@@ -51,7 +52,7 @@ class Library {
    */
   addBook(title) {
     if (this.hasBook(title)) {
-      throw new Error(`${title} is already added`)
+      throw new Error(`${title} is already added`);
     }
     this.#books.add(title);
   }
@@ -61,7 +62,7 @@ class Library {
    */
   removeBook(title) {
     if (!this.hasBook(title)) {
-      throw new Error(`Can't find ${title}`)
+      throw new Error(`Can't find ${title}`);
     }
     this.#books.delete(title);
   }
@@ -70,40 +71,40 @@ class Library {
    * @param {string[]} arr
    * @returns {boolean}
    */
-  #checkDuplicates (arr) {
+  #checkDuplicates(arr) {
     return arr.length === new Set().add(...arr).size;
   }
 }
 
-const library = new Library('Jain Eyre', 'The Goldfinch', 'Dune', 'The Colour of Magic', 'Pyramids', 'Reaper Man');
+const library = new Library("Jain Eyre", "The Goldfinch", "Dune", "The Colour of Magic", "Pyramids", "Reaper Man");
 
 try {
-  console.log(library.hasBook('Dune'))
-  console.log(library.hasBook('Maskerade'))
+  console.log(library.hasBook("Dune"));
+  console.log(library.hasBook("Maskerade"));
 } catch (e) {
   console.log(e.message);
 }
 
 try {
-  library.addBook('Dune')
+  library.addBook("Dune");
 } catch (e) {
   console.log(e.message);
 }
 
 try {
-  library.addBook('Maskerade')
+  library.addBook("Maskerade");
 } catch (e) {
   console.log(e.message);
 }
 
 try {
-  library.removeBook('Maskerade')
+  library.removeBook("Maskerade");
 } catch (e) {
   console.log(e.message);
 }
 
 try {
-  library.removeBook('Jingo')
+  library.removeBook("Jingo");
 } catch (e) {
   console.log(e.message);
 }
