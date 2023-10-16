@@ -1,6 +1,6 @@
 abstract class Foo {
   foo: string
-  constructor(foo: string) {
+  protected constructor(foo: string) {
     this.foo = foo
   }
   print() {
@@ -18,8 +18,8 @@ class Baz extends Foo {
   }
 }
 
-const ff = new Foo('hey foo');
+// const ff = new Foo('hey foo');
 const bb = new Baz('hey baz', 'bar');
 
-ff.print();
+// ff.print();
 bb.print();

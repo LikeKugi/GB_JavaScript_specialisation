@@ -19,7 +19,7 @@ class Baz extends Foo {
         console.log(this.baz);
     }
 }
-const ff = new Foo('hey foo');
+// const ff = new Foo('hey foo');
 const bb = new Baz('hey baz', 'bar');
-ff.print();
+// ff.print();
 bb.print();
