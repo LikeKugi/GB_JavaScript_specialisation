@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <link rel="stylesheet"
+          href="style.css">
+    <title>Homework 2</title>
+  </head>
+  <body>
+    <div class="task">
+      Вашей задачей является создание веб-слайдера для отображения изображений на веб-странице. Слайдер должен позволять переключаться между изображениями и отображать их в центре экрана.
+
+      <ol class="task__list">
+        <li class="task__item">Создайте интерфейс веб-страницы, который включает в себя следующие элементы:
+          <ul class="task__sublist">
+            <li class="task__subitem">Контейнер для отображения текущего изображения.</li>
+            <li class="task__subitem">Кнопки "Предыдущее изображение" и "Следующее изображение" для переключения между изображениями.</li>
+            <li class="task__subitem">Навигационные точки (индикаторы) для быстрого переключения между изображениями.</li>
+          </ul>
+        </li>
+        <li class="task__item">Используйте HTML для создания элементов интерфейса.</li>
+        <li class="task__item">Используйте JavaScript для обработки событий:
+          <ul class="task__sublist">
+            <li class="task__subitem">При клике на кнопку "Предыдущее изображение" должно отображаться предыдущее изображение.</li>
+            <li class="task__subitem">При клике на кнопку "Следующее изображение" должно отображаться следующее изображение.</li>
+            <li class="task__subitem">При клике на навигационные точки, слайдер должен переключаться к соответствующему изображению.</li>
+          </ul>
+        </li>
+        <li class="task__item">Слайдер должен циклически переключаться между изображениями, то есть после последнего изображения должно отображаться первое, и наоборот.</li>
+        <li class="task__item">Добавьте стилизацию для слайдера и элементов интерфейса с использованием CSS для улучшения внешнего вида.</li>
+      </ol>
+    </div>
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title">Slider</h1>
+        <div class="section__slider slider">
+          <div class="slider__content"></div>
+          <div class="slider__actions">
+            <button class="slider__btn btn btn--action">Previous</button>
+            <button class="slider__btn btn btn--action">Next</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
