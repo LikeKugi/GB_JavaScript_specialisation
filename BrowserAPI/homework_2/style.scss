@@ -50,7 +50,7 @@
     color: #242424;
     background-color: #fefefe;
     &:hover {
-      background-color: #aeaeae;
+      border-color: crimson;
     }
     &:active {
       color: #fefefe;
@@ -110,6 +110,13 @@
     width: 100%;
     object-fit: cover;
     transition: all 0.5s;
+  }
+}
+
+.row {
+  flex-direction: row;
+  &--reverse {
+    flex-direction: row-reverse;
   }
 }
 

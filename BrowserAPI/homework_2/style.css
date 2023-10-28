@@ -51,7 +51,7 @@
   background-color: #fefefe;
 }
 .btn--action:hover {
-  background-color: #aeaeae;
+  border-color: crimson;
 }
 .btn--action:active {
   color: #fefefe;
@@ -110,6 +110,13 @@
   width: 100%;
   object-fit: cover;
   transition: all 0.5s;
+}
+
+.row {
+  flex-direction: row;
+}
+.row--reverse {
+  flex-direction: row-reverse;
 }
 
 .left {
