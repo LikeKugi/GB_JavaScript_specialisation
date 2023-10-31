@@ -1,12 +1,11 @@
 #app {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
-
+  column-count: 2;
+  column-gap: 2rem;
+  column-width: auto;
+  column-fill: balance;
   img {
-    width: 50%;
+    width: 100%;
   }
 }
